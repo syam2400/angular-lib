@@ -1,0 +1,33 @@
+<h1>Addbooks</h1>
+
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+
+  <div class="mb-3">
+    <label  class="form-label">ID</label>
+    <input type="number" required class="form-control" name="id"  #price="ngModel" [(ngModel)]="data.id">
+    <label class="text-danger" *ngIf="form.submitted && id.errors ?.['required']">id is requred</label>
+  </div>
+
+    <div class="mb-3">
+      <label  class="form-label">Title</label>
+      <input type="text" required class="form-control" name="title" #title="ngModel" [(ngModel)]="data.title" >
+      <label class="text-danger" *ngIf="form.submitted && title.errors ?.['required']">Title is requred</label>
+    </div>
+
+    <div class="mb-3">
+      <label  class="form-label">Author</label>
+      <input type="text" required class="form-control" name="author"  #author="ngModel" [(ngModel)]="data.author" >
+      <label class="text-danger" *ngIf="form.submitted && author.errors ?.['required']">Title is requred</label>
+    </div>
+
+    <div class="mb-3">
+      <label  class="form-label">Price</label>
+      <input type="number" required class="form-control" name="price"  #price="ngModel" [(ngModel)]="data.price">
+      <label class="text-danger" *ngIf="form.submitted && price.errors ?.['required']">Title is requred</label>
+    </div>
+
+
+   
+   <input type="submit" class="form-control">
+   
+  </form>

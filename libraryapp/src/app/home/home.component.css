@@ -1,0 +1,44 @@
+.homediv{
+    margin-top: 20px;
+    background-color: rgb(3, 52, 107);
+    height: 500px;
+    width: 410px;
+    padding: 5px;
+    position: absolute;
+    left: 480px;
+ }
+
+ .childdiv{
+    margin: 15px;
+    background-color: darkgreen;
+    height: 100px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 45px;
+    
+   
+ }
+ .btns{
+    height: 80px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .childdiv2{
+   margin: 15px;
+   background-color: darkgreen;
+   height: 100px;
+   width: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 25px;
+   margin-top: 50px;
+   
+  
+}

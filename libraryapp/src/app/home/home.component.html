@@ -1,0 +1,28 @@
+  
+  <div class="homediv">
+    <div *ngIf="isAuthenticated==true">
+    <div  class="childdiv">
+        <button [routerLink]="['/view']" class="btns">Viewbooks</button>
+    </div>
+    <div class="childdiv">
+        <button [routerLink]="['/add']" class="btns">Addbooks</button>
+    </div>
+    <div class="childdiv" >
+        <button (click)="logout()" class="btns">Logout</button>
+    </div>
+    
+</div>
+<div *ngIf="isAuthenticated==false" >
+    
+    <div class="childdiv2" style="margin-top: 100px;">
+        <button [routerLink]="['/log']" class="btns">Login</button>
+    </div>
+
+    <div class="childdiv2">
+        <button [routerLink]="['/reg']" class="btns">Register</button>
+    </div>
+</div>
+   
+
+
+  </div>
